@@ -24,9 +24,9 @@ classifiers = [
 ]
 dependencies = [
     "numpy",
-    "plumbum==1.7.0",
-    "pyparsing==2.4.7",
-    "rpyc==5.2.3",
+    "plumbum>=1.10.0",
+    "pyparsing>=3.3.1",
+    "rpyc>=5.2.3,<6.0.0",
 ]
 
 [project.urls]

@@ -16,9 +16,9 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "numpy" },
-    { name = "plumbum", specifier = "==1.7.0" },
-    { name = "pyparsing", specifier = "==2.4.7" },
-    { name = "rpyc", specifier = "==5.2.3" },
+    { name = "plumbum", specifier = ">=1.10.0" },
+    { name = "pyparsing", specifier = ">=3.3.1" },
+    { name = "rpyc", specifier = ">=5.2.3,<6.0.0" },
 ]
 
 [[package]]
@@ -73,35 +73,23 @@ wheels = [
 
 [[package]]
 name = "plumbum"
-version = "1.7.0"
+version = "1.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "pypiwin32", marker = "platform_python_implementation != 'PyPy' and sys_platform == 'win32'" },
+    { name = "pywin32", marker = "platform_python_implementation != 'PyPy' and sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ed/ba/431d7f420cd93c4b8ccb15ed8f1c6c76c81965634fd70345af0b19c2b7bc/plumbum-1.7.0.tar.gz", hash = "sha256:317744342c755319907c773cc87c3a30adaa3a41b0d34c0ce02d9d1904922dce", size = 318890, upload-time = "2021-02-08T19:49:02.006Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/dc/c8/11a5f792704b70f071a3dbc329105a98e9cc8d25daaf09f733c44eb0ef8e/plumbum-1.10.0.tar.gz", hash = "sha256:f8cbf0ecec0b73ff4e349398b65112a9e3f9300e7dc019001217dcc148d5c97c", size = 320039, upload-time = "2025-10-31T05:02:48.697Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6c/fc/6cdaf59a001c707333869b054daf1e0df02978d261f20f8b082afcf189c3/plumbum-1.7.0-py2.py3-none-any.whl", hash = "sha256:139bbe08ee065b522a8a07d4f7e9f8eddffd78cc218b65b11cca2b33683e6b57", size = 116882, upload-time = "2021-02-08T19:49:00.569Z" },
+    { url = "https://files.pythonhosted.org/packages/79/ad/45312df6b63ba64ea35b8d8f5f0c577aac16e6b416eafe8e1cb34e03f9a7/plumbum-1.10.0-py3-none-any.whl", hash = "sha256:9583d737ac901c474d99d030e4d5eec4c4e6d2d7417b1cf49728cf3be34f6dc8", size = 127383, upload-time = "2025-10-31T05:02:47.002Z" },
 ]
 
 [[package]]
 name = "pyparsing"
-version = "2.4.7"
+version = "3.3.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/c1/47/dfc9c342c9842bbe0036c7f763d2d6686bcf5eb1808ba3e170afdb282210/pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1", size = 649718, upload-time = "2020-04-05T22:21:25.349Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/33/c1/1d9de9aeaa1b89b0186e5fe23294ff6517fce1bc69149185577cd31016b2/pyparsing-3.3.1.tar.gz", hash = "sha256:47fad0f17ac1e2cad3de3b458570fbc9b03560aa029ed5e16ee5554da9a2251c", size = 1550512, upload-time = "2025-12-23T03:14:04.391Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b", size = 67842, upload-time = "2020-04-05T22:21:22.897Z" },
-]
-
-[[package]]
-name = "pypiwin32"
-version = "223"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pywin32" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/13/e8/4f38eb30c4dae36634a53c5b2cd73b517ea3607e10d00f61f2494449cec0/pypiwin32-223.tar.gz", hash = "sha256:71be40c1fbd28594214ecaecb58e7aa8b708eabfa0125c8a109ebd51edbd776a", size = 622, upload-time = "2018-02-26T00:43:23.994Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/d0/1b/2f292bbd742e369a100c91faa0483172cd91a1a422a6692055ac920946c5/pypiwin32-223-py3-none-any.whl", hash = "sha256:67adf399debc1d5d14dffc1ab5acacb800da569754fafdc576b2a039485aa775", size = 1674, upload-time = "2018-02-26T00:43:23.108Z" },
+    { url = "https://files.pythonhosted.org/packages/8b/40/2614036cdd416452f5bf98ec037f38a1afb17f327cb8e6b652d4729e0af8/pyparsing-3.3.1-py3-none-any.whl", hash = "sha256:023b5e7e5520ad96642e2c6db4cb683d3970bd640cdf7115049a6e9c3682df82", size = 121793, upload-time = "2025-12-23T03:14:02.103Z" },
 ]
 
 [[package]]
@@ -119,12 +107,12 @@ wheels = [
 
 [[package]]
 name = "rpyc"
-version = "5.2.3"
+version = "5.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "plumbum" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ec/94/1d46970dee93f13ee356f2a04242cae50cfdf1847cc30aaa575055f1679f/rpyc-5.2.3.tar.gz", hash = "sha256:220199bde0841374009b2693d8b9c7aa8bd170840813a22c594d30848ccbb27e", size = 58919, upload-time = "2022-08-04T03:48:01.832Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/e0/a584823afecc5d8a0c18c46da4e028876e3e34946e6e3b2c3d430cd19b18/rpyc-5.3.1.tar.gz", hash = "sha256:f2233174879faf18ae266437d5a65511ce46c817cec4edc1344f036758cfbf52", size = 61611, upload-time = "2023-02-22T03:45:02.967Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/15/23/9ea5869b7af98d39743c21e020a98d53d925c776d59d06c986975bbc6bb3/rpyc-5.2.3-py3-none-any.whl", hash = "sha256:361383f14ce730716d761e17c8054994a99e66ec872a2b4337f0cb877028dbd2", size = 71288, upload-time = "2022-08-04T03:48:00.428Z" },
+    { url = "https://files.pythonhosted.org/packages/a4/d8/715206e54dfc54177d126f05b6ecc9526891b11ac7a4bafdb1ae4df55eab/rpyc-5.3.1-py3-none-any.whl", hash = "sha256:6e8153792ac221a80f420d2e0b241a10c6e43b105d325998b18a4e7af329f9ec", size = 74036, upload-time = "2023-02-22T03:45:00.933Z" },
 ]
