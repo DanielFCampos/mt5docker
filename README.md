@@ -8,10 +8,12 @@ The package uses [wine](https://www.winehq.org), [rpyc](https://github.com/tomer
 
 ## Installation
 
-- MetraTrader5 
+- MetraTrader5
+
 Please refer to [MetaTrader5-Docker](https://github.com/gmag11/MetaTrader5-Docker) to dockerize your MT5.
 
 - Python connection
+
 To install use UV on remote github `uv add "mt5docker @ git+https://github.com/DanielFCampos/mt5docker"`
 
 ## How To Use
