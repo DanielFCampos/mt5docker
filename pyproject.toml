@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mt5docker"
+version = "0.1.0"
+description = "MetaTrader5 for dockerized applications"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+authors = [
+    { name = "Daniel Campos" }
+]
+keywords = ["metatrader5", "mt5", "docker", "trading", "forex"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "numpy",
+    "plumbum==1.7.0",
+    "pyparsing==2.4.7",
+    "rpyc==5.2.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/DanielFCampos/mt5docker"
+Repository = "https://github.com/DanielFCampos/mt5docker"
+Issues = "https://github.com/DanielFCampos/mt5docker/issues"
+
+[project.scripts]
+mt5docker = "mt5docker.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mt5docker"]
