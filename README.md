@@ -2,7 +2,7 @@
 
 A simple package to enable Python connection to MT5 on docker.
 
-This package is a fork from [mt5linux](https://github.com/lucas-campagna/mt5linux) updated to work on Python 3.13+.
+This package is inspired and based on [mt5linux](https://github.com/lucas-campagna/mt5linux) updated to work on Python 3.13+.
 
 The package uses [wine](https://www.winehq.org), [rpyc](https://github.com/tomerfiliba-org/rpyc) to allow using [MetaTrader5](https://pypi.org/project/MetaTrader5) towards a dockerized MT5 application.
 
